@@ -11,6 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140423051356) do
+
+  create_table "progresses", force: true do |t|
+    t.integer  "student_id"
+    t.string   "student_name"
+    t.string   "goal"
+    t.string   "goal_month"
+    t.string   "goal_week"
+    t.datetime "progress_date"
+    t.datetime "due_date"
+    t.integer  "progress"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
