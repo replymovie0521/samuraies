@@ -1,0 +1,41 @@
+<h1>Listing progresses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Student</th>
+      <th>Student name</th>
+      <th>Goal</th>
+      <th>Goal month</th>
+      <th>Goal week</th>
+      <th>Progress date</th>
+      <th>Due date</th>
+      <th>Progress</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @progresses.each do |progress| %>
+      <tr>
+        <td><%= progress.student_id %></td>
+        <td><%= progress.student_name %></td>
+        <td><%= progress.goal %></td>
+        <td><%= progress.goal_month %></td>
+        <td><%= progress.goal_week %></td>
+        <td><%= progress.progress_date %></td>
+        <td><%= progress.due_date %></td>
+        <td><%= progress.progress %></td>
+        <td><%= link_to 'Show', progress %></td>
+        <td><%= link_to 'Edit', edit_progress_path(progress) %></td>
+        <td><%= link_to 'Destroy', progress, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Progress', new_progress_path %>

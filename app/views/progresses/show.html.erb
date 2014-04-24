@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @progress.student_id %>
+</p>
+
+<p>
+  <strong>Student name:</strong>
+  <%= @progress.student_name %>
+</p>
+
+<p>
+  <strong>Goal:</strong>
+  <%= @progress.goal %>
+</p>
+
+<p>
+  <strong>Goal month:</strong>
+  <%= @progress.goal_month %>
+</p>
+
+<p>
+  <strong>Goal week:</strong>
+  <%= @progress.goal_week %>
+</p>
+
+<p>
+  <strong>Progress date:</strong>
+  <%= @progress.progress_date %>
+</p>
+
+<p>
+  <strong>Due date:</strong>
+  <%= @progress.due_date %>
+</p>
+
+<p>
+  <strong>Progress:</strong>
+  <%= @progress.progress %>
+</p>
+
+<%= link_to 'Edit', edit_progress_path(@progress) %> |
+<%= link_to 'Back', progresses_path %>
