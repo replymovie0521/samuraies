@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140423051356) do
+ActiveRecord::Schema.define(version: 20140426074857) do
+
+  create_table "curriculums", force: true do |t|
+    t.integer  "curriculum_id"
+    t.integer  "chapter"
+    t.integer  "section"
+    t.string   "tittle"
+    t.string   "ex"
+    t.string   "rank"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "progresses", force: true do |t|
     t.integer  "student_id"

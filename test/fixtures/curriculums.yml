@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  curriculum_id: 1
+  chapter: 1
+  section: 1
+  tittle: MyString
+  ex: MyString
+  rank: MyString
+
+two:
+  curriculum_id: 1
+  chapter: 1
+  section: 1
+  tittle: MyString
+  ex: MyString
+  rank: MyString
